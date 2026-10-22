@@ -1,0 +1,104 @@
+{
+  "currency": "USD",
+  "materials": [
+    {
+      "id": "steel",
+      "name": "Сталь",
+      "thicknessMm": 3
+    },
+    {
+      "id": "stainless-steel",
+      "name": "Нержавійка",
+      "thicknessMm": 3
+    }
+  ],
+  "colors": [
+    {
+      "id": "black",
+      "name": "Чорний",
+      "hex": "#171A19"
+    },
+    {
+      "id": "khaki",
+      "name": "Хакі",
+      "hex": "#66694D"
+    },
+    {
+      "id": "coyote",
+      "name": "Койот",
+      "hex": "#A58963"
+    }
+  ],
+  "vehicleOptions": [
+    {
+      "id": "toyota-land-cruiser",
+      "name": "Toyota Land Cruiser",
+      "fitmentStatus": "requires-confirmation"
+    },
+    {
+      "id": "toyota-hilux",
+      "name": "Toyota Hilux",
+      "fitmentStatus": "requires-confirmation"
+    },
+    {
+      "id": "jeep-wrangler",
+      "name": "Jeep Wrangler",
+      "fitmentStatus": "requires-confirmation"
+    },
+    {
+      "id": "land-rover-defender",
+      "name": "Land Rover Defender",
+      "fitmentStatus": "requires-confirmation"
+    },
+    {
+      "id": "range-rover",
+      "name": "Range Rover",
+      "fitmentStatus": "requires-confirmation"
+    },
+    {
+      "id": "ford-ranger",
+      "name": "Ford Ranger",
+      "fitmentStatus": "requires-confirmation"
+    }
+  ],
+  "products": [
+    {
+      "id": "front-bumper",
+      "slug": "perednii-bamper",
+      "name": "Передній бампер",
+      "description": "Геометрія, кріплення та виконання під модель і покоління авто.",
+      "price": 1000,
+      "specifications": {
+        "lengthMm": 2000,
+        "widthMm": 400,
+        "heightMm": 400,
+        "weightKg": null
+      },
+      "dataStatus": "preliminary",
+      "materialIds": ["steel", "stainless-steel"],
+      "colorIds": ["black", "khaki", "coyote"],
+      "image": "/images/products/front-bumper.png",
+      "imageAlt": "Передній металевий бампер RESONIK, концептуальна візуалізація",
+      "background": "/images/backgrounds/studio.png"
+    },
+    {
+      "id": "rear-bumper",
+      "slug": "zadnii-bamper",
+      "name": "Задній бампер",
+      "description": "Конструкція під задню частину авто та потрібну комплектацію.",
+      "price": 1000,
+      "specifications": {
+        "lengthMm": 2000,
+        "widthMm": 400,
+        "heightMm": 400,
+        "weightKg": null
+      },
+      "dataStatus": "preliminary",
+      "materialIds": ["steel", "stainless-steel"],
+      "colorIds": ["black", "khaki", "coyote"],
+      "image": "/images/products/rear-bumper.png",
+      "imageAlt": "Задній металевий бампер RESONIK, концептуальна візуалізація",
+      "background": "/images/backgrounds/studio.png"
+    }
+  ]
+}

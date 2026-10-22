@@ -1,0 +1,142 @@
+.dialog {
+  padding: 0;
+  border: 0;
+  background: var(--milk);
+  color: var(--green);
+  width: 480px;
+  max-width: calc(100% - 32px);
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+}
+.dialog::backdrop {
+  background: #090e10b8;
+  backdrop-filter: blur(5px);
+}
+.content {
+  position: relative;
+  padding: 40px;
+}
+.close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  background: none;
+  border: 0;
+  font-size: 34px;
+  line-height: 44px;
+  width: 44px;
+  cursor: pointer;
+}
+.content h2 {
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  line-height: 1.15;
+  margin: 20px 0;
+}
+.local {
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 12px;
+  background: #1f353910;
+  margin-bottom: 24px;
+}
+.summary {
+  border-top: 1px solid #1f353930;
+  border-bottom: 1px solid #1f353930;
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+.summary p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
+.content label:not(.consent) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 18px;
+}
+.content input:not([type='checkbox']),
+.content textarea {
+  width: 100%;
+  border: 1px solid #1f353940;
+  padding: 12px;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+}
+.content textarea {
+  resize: vertical;
+  min-height: 95px;
+}
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+.consent input {
+  margin-top: 3px;
+  width: 17px;
+  height: 17px;
+  flex: none;
+  accent-color: var(--green);
+}
+.error {
+  color: #8d2929;
+  font-size: 12px;
+  margin: 8px 0;
+}
+.hint {
+  font-size: 11px;
+  opacity: 0.65;
+  margin: 8px 0;
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 20px;
+  background: var(--green);
+  color: var(--milk);
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+.preview h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.preview p,
+.preview dl {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.preview dd {
+  margin: 0 0 16px;
+  overflow-wrap: anywhere;
+}
+.preview dt {
+  font-size: 11px;
+  opacity: 0.65;
+}
+.preview button {
+  background: var(--green);
+  color: var(--milk);
+  border: 0;
+  padding: 16px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .content {
+    padding: 32px 24px;
+  }
+  .content h2 {
+    font-size: 34px;
+  }
+}

@@ -1,0 +1,97 @@
+.footer {
+  background: var(--green);
+  color: var(--milk);
+  padding: 72px 0 40px;
+}
+.top {
+  display: grid;
+  grid-template-columns: 2.06fr 1fr;
+  gap: 24px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f3f1e833;
+}
+.top h2 {
+  font-size: clamp(36px, 4.45vw, 64px);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -2px;
+  margin: 0;
+}
+.top p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 0 24px;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 40px;
+}
+.bottom nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 14px;
+}
+.bottom nav button {
+  width: 210px;
+}
+.signature {
+  font-size: 12px;
+  opacity: 0.65;
+  margin: 40px 0 0;
+}
+@media (max-width: 900px) {
+  .bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .top {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .bottom nav {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 48px 0 32px;
+  }
+  .top {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-bottom: 32px;
+  }
+  .top h2 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .top p {
+    font-size: 15px;
+  }
+  .bottom {
+    margin-top: 32px;
+    gap: 28px;
+  }
+  .bottom nav {
+    gap: 22px;
+    font-size: 13px;
+  }
+  .bottom nav button {
+    font-size: 13px;
+    width: auto;
+    min-height: 32px;
+    border: 0;
+    padding: 0;
+  }
+  .bottom nav button img {
+    display: none;
+  }
+  .signature {
+    font-size: 11px;
+    margin-top: 28px;
+  }
+}

@@ -1,0 +1,55 @@
+.brand,
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+}
+.brand {
+  background: #090e10;
+  color: #f3f1e8;
+  padding: 7px 12px;
+  font-size: 24px;
+  width: max-content;
+  line-height: 33px;
+}
+.brand > img {
+  object-fit: contain;
+}
+.footer {
+  font-weight: 500;
+  gap: 24px;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+.crop {
+  position: relative;
+  width: 72px;
+  height: 80px;
+  overflow: hidden;
+  display: block;
+}
+.crop img {
+  position: absolute;
+  width: 118.784px;
+  height: 118.784px;
+  max-width: none;
+  left: -26.216px;
+  top: -18.676px;
+}
+@media (max-width: 600px) {
+  .footer {
+    font-size: 30px;
+    gap: 18px;
+  }
+  .crop {
+    width: 56px;
+    height: 62px;
+  }
+  .crop img {
+    width: 93.184px;
+    height: 93.184px;
+    left: -20.566px;
+    top: -14.651px;
+  }
+}

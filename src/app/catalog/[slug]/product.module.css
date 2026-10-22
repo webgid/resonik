@@ -1,0 +1,134 @@
+.page {
+  background: #e5e7e1;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  padding: 24px 0 32px;
+  opacity: 0.75;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 856fr 416fr;
+  gap: 24px;
+  padding-bottom: 48px;
+}
+.stage {
+  min-width: 0;
+}
+.stage h1 {
+  font-size: 60px;
+  line-height: 1.12;
+  letter-spacing: -2.4px;
+  font-weight: 500;
+  margin: 24px 0 32px;
+}
+.stage > div:first-of-type {
+  aspect-ratio: 856/356;
+}
+.caption {
+  font:
+    10px/1.6 var(--font-mono),
+    monospace;
+  opacity: 0.6;
+  margin: 14px 0 32px;
+}
+.material {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  border-top: 1px solid #1f35392e;
+  padding-top: 28px;
+}
+.material strong {
+  display: block;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-bottom: 6px;
+}
+.material p {
+  font-size: 26px;
+  line-height: 1.3;
+  margin: 6px 0 12px;
+}
+.material > div > span:last-child {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.approval {
+  padding: 40px 0 72px;
+  border-top: 1px solid #1f35392e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+.approval h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.approval p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 600px;
+}
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .stage h1 {
+    font-size: 46px;
+    letter-spacing: -1.5px;
+  }
+}
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 40px;
+  }
+  .breadcrumb {
+    font-size: 11px;
+    padding-top: 24px;
+    gap: 8px;
+  }
+  .stage h1 {
+    font-size: 38px;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+    margin-top: 20px;
+  }
+  .stage > div:first-of-type {
+    margin: 0 -24px;
+    aspect-ratio: 390/250;
+  }
+  .caption {
+    font-size: 9px;
+    margin-bottom: 24px;
+  }
+  .material strong {
+    font-size: 52px;
+  }
+  .material p {
+    font-size: 24px;
+  }
+  .approval {
+    padding: 32px 0 48px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .approval h2 {
+    font-size: 30px;
+  }
+  .approval p {
+    font-size: 15px;
+  }
+}

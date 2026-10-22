@@ -1,0 +1,28 @@
+.media {
+  position: relative;
+  background: var(--milk);
+  overflow: hidden;
+  isolation: isolate;
+  aspect-ratio: 2.09;
+}
+.background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.product {
+  position: absolute;
+  inset: 5.58% 2.87%;
+  width: 94.26%;
+  height: 88.84%;
+  object-fit: contain;
+  mix-blend-mode: normal;
+}
+@media (max-width: 600px) {
+  .media {
+    aspect-ratio: 1.56;
+  }
+}
