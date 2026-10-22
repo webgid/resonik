@@ -1,6 +1,7 @@
 import localFont from 'next/font/local';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import MobileProductPicker from '@/components/MobileProductPicker/MobileProductPicker';
 import RequestProvider from '@/components/RequestDialog/RequestProvider';
 import './globals.css';
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           <Header />
           <main id="main">{children}</main>
           <Footer />
+          <MobileProductPicker />
         </RequestProvider>
       </body>
     </html>

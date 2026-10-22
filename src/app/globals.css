@@ -129,3 +129,9 @@ button {
     transition: none !important;
   }
 }
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(73px + env(safe-area-inset-bottom, 0px));
+  }
+}
