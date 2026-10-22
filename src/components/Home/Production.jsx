@@ -4,17 +4,18 @@ const features = [
   ['Сучасні технології', 'Токарна обробка, ЧПК і зварювання для втілення вашого задуму.'],
   ['Потрійна перевірка', 'Кожен виріб перевіряємо на співвісність.'],
 ];
-export default function Production() {
+export default function Production({ standalone = false }) {
+  const Heading = standalone ? 'h1' : 'h2';
   return (
     <section id="production" className={styles.production}>
       <div className={`container ${styles.productionGrid}`}>
         <div>
           <p className="eyebrow">RESONIK / ВИРОБНИЦТВО</p>
-          <h2>
+          <Heading>
             Ручна робота.
             <br />
             Технологічна точність.
-          </h2>
+          </Heading>
           <p>
             Кожен виріб виготовляємо вручну з використанням сучасних технологій і потрійною
             перевіркою співвісності.

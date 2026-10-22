@@ -1,8 +1,7 @@
 import HomeHero from '@/components/Home/HomeHero';
 import InstalledBumper from '@/components/Home/InstalledBumper';
 import ProductSelection from '@/components/Home/ProductSelection';
-import Production from '@/components/Home/Production';
-import HowToOrder from '@/components/Home/HowToOrder';
+import BrandOverview from '@/components/Home/BrandOverview';
 export const metadata = { alternates: { canonical: '/' } };
 export default function HomePage() {
   return (
@@ -10,8 +9,7 @@ export default function HomePage() {
       <HomeHero />
       <InstalledBumper />
       <ProductSelection />
-      <Production />
-      <HowToOrder />
+      <BrandOverview />
     </>
   );
 }

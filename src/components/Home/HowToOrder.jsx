@@ -3,15 +3,16 @@ import { orderSteps } from '@/data/site';
 import ProductMedia from '../ProductMedia/ProductMedia';
 import Button from '../Button/Button';
 import styles from './Home.module.css';
-export default function HowToOrder() {
+export default function HowToOrder({ standalone = false }) {
+  const Heading = standalone ? 'h1' : 'h2';
   return (
     <section id="how-to-order" className={`container ${styles.how}`}>
       <div className={styles.howHeading}>
         <p className="eyebrow">RESONIK / ЯК ЗАМОВИТИ</p>
-        <h2>
+        <Heading>
           Від вашого вибору —<br />
           до готового виробу.
-        </h2>
+        </Heading>
         <p>
           Оберіть бампер і залиште запит. Ми уточнимо дані авто, погодимо комплектацію та домовимося
           про наступні кроки.

@@ -41,7 +41,11 @@ export default function Header() {
           <Brand />
           <nav aria-label="Основна навігація" className={styles.desktop}>
             {navigation.map((item) => (
-              <Link key={item.href} href={item.href}>
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={pathname === item.href ? 'page' : undefined}
+              >
                 {item.label}
               </Link>
             ))}
@@ -74,7 +78,12 @@ export default function Header() {
         </div>
         <div className={styles.menuBody}>
           <nav aria-label="Мобільна навігація">
-            <Link href="/catalog" onClick={close} className={styles.catalog}>
+            <Link
+              href="/catalog"
+              aria-current={pathname === '/catalog' ? 'page' : undefined}
+              onClick={close}
+              className={styles.catalog}
+            >
               Каталог
             </Link>
             <div className={styles.tiles}>
@@ -86,7 +95,13 @@ export default function Header() {
               ))}
             </div>
             {navigation.slice(1).map((item) => (
-              <Link className={styles.menuLink} key={item.href} href={item.href} onClick={close}>
+              <Link
+                className={styles.menuLink}
+                key={item.href}
+                href={item.href}
+                aria-current={pathname === item.href ? 'page' : undefined}
+                onClick={close}
+              >
                 {item.label}
               </Link>
             ))}

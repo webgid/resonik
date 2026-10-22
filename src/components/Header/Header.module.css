@@ -1,4 +1,8 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 4px 20px #090e1008;
   height: 88px;
   border-bottom: 1px solid #1f353924;
   background: var(--milk);
@@ -53,6 +57,9 @@
   background: #0008;
 }
 .menuHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   height: 80px;
   padding: 0 24px;
   background: var(--green);
@@ -133,4 +140,14 @@
   .burger {
     display: block;
   }
+}
+
+.desktop a[aria-current='page'] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.menuLink[aria-current='page'],
+.catalog[aria-current='page'] {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }

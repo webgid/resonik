@@ -1,7 +1,7 @@
 export const navigation = [
   { href: '/catalog', label: 'Каталог' },
-  { href: '/#production', label: 'Виробництво' },
-  { href: '/#how-to-order', label: 'Як замовити' },
+  { href: '/production', label: 'Виробництво' },
+  { href: '/how-to-order', label: 'Як замовити' },
 ];
 export const orderSteps = [
   ['Оберіть виріб', 'Передній або задній бампер, матеріал і колір.'],

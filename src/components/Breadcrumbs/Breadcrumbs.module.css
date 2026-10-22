@@ -1,0 +1,26 @@
+.breadcrumbs {
+  padding: 24px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.breadcrumbs > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.breadcrumbs a {
+  opacity: 0.65;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.dark {
+  background: var(--green);
+  color: var(--milk);
+}
+@media (max-width: 767px) {
+  .breadcrumbs {
+    font-size: 11px;
+  }
+}

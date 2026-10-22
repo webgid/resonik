@@ -24,8 +24,8 @@ export default function Footer() {
           <Brand footer />
           <nav aria-label="Навігація у футері">
             <Link href="/catalog">Каталог</Link>
-            <Link href="/#production">Наш підхід</Link>
-            <Button text>Обговорити ідею</Button>
+            <Link href="/production">Наш підхід</Link>
+            <Link href="/how-to-order">Як замовити</Link>
           </nav>
         </div>
         <p className={styles.signature}>RESONIK · Із задуму — в метал.</p>
